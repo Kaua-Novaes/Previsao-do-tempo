@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+body{
+    background-color: #E7E2E2;
+}
+.container{
+    width: 1076px;
+    height: 650px;
+    margin: 0 auto;
+}
+.telaMaior{
+    width: 1076px;
+    height: 445px;
+    background-image: url(img/céu.jpg);
+    background-size: cover;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+}
+.previsao{
+    margin-left: 50px;
+    width: 450px;
+    height: 357px;
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.25);
+    align-self: center;
+}
+.form{
+    margin-right: 100px;
+    margin-top: 50px;
+    width: 397px;
+    height: 44px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-around;
+    
+}
+#city-input{
+    background-color: rgba(255, 255, 255, 0);
+    border-radius: 20px;
+    width: 350px;
+    height: 44px;
+    box-shadow: 0 0 0 0;
+    border: 0 none;
+    outline: 0;
+    padding-left: 10px;
+}
+#pesquisar{
+    background-color: rgba(255, 255, 255, 0);
+    box-shadow: 0 0 0 0;
+    border: 0 none;
+    outline: 0;
+    cursor: pointer;
+    font-size: 20px;
+    margin-right: 10px;
+    color: white;
+}
+.principais{
+    width: 1076px;
+    height: 170px;
+    margin-top: 32px;
+    display: flex;
+    justify-content: space-between;
+}
+.principais span{
+    width: 210px;
+    height: 210px;
+    border-radius: 20px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size:1.9em;
+
+}
+.principais h1{
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: italic;
+}
+.titulo h2{
+    font-size: 80px;
+    color: white;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin-left: 12px;
+    line-height: 0.7;
+    margin-top: 25px;
+}
+.data{
+    color: white;
+    margin-left: 11px;
+
+}
+.icones{
+    margin-top: 25px;
+    margin-left: 50px;
+    gap: 19px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 2.5em;
+    font-weight: bold;
+    color: white;
+    flex-wrap: wrap;
+}
+#umidity{
+    margin-right: 50px;
+}
+#wind{
+    margin-left: 75px;
+    margin-top: 25px;
+}
+.icones span{
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: bold;
+}
+#paris{
+    background-image: url(img/paris.jpg);
+    background-size: cover;
+
+}
+#dubai{
+    background-image: url(img/dubai.jpg);
+    background-size: cover;
+
+}
+#sp{
+    background-image: url(img/sp.jpg);
+    background-size: cover;
+
+}
+#rj{
+    background-image: url(img/rio.jpg);
+    background-size: cover;
+
+}
+.titulo img{
+    margin-bottom: 33px;
+    width: 25px;
+}
+
