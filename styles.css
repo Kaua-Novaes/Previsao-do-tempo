@@ -152,4 +152,7 @@ body{
     margin-bottom: 33px;
     width: 25px;
 }
-
+#weather-icon{
+    width: 50px;
+    
+}
