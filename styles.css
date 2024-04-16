@@ -12,7 +12,7 @@
 body{
     background-color: #E7E2E2;
 }
-.container{
+#container{
     width: 1076px;
     height: 650px;
     margin: 0 auto;
@@ -29,7 +29,7 @@ body{
 }
 .previsao{
     margin-left: 50px;
-    width: 450px;
+    width: 475px;
     height: 357px;
     border-radius: 20px;
     background-color: rgba(255, 255, 255, 0.25);
@@ -155,4 +155,26 @@ body{
 #weather-icon{
     width: 50px;
     
+}
+.bandeira{
+    display: flex;
+}
+#country{
+    margin-top: 14px;
+    width: 30px;
+    height: 30px;
+}
+.und{
+    display: none;
+    margin-left: 50px;
+    width: 475px;
+    height: 50px;
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.25);
+    align-self: center;
+    text-align: center;
+    padding: 10px;
+    color: black;
+    font-weight: bold;
+    font-style: italic;
 }

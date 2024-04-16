@@ -19,16 +19,20 @@
   </head>
 
 <body>
-    <div class="container">
+    <div id="container" class="hide">
         <div class="telaMaior">
             <div class="previsao">
                 <div class="titulo">
-                    <h2 id="city">Suzano <span></span></h2>
-                    <img src="https://flagsapi.com/BE/flat/64.png" alt="" id="country">
+                    <div class="bandeira">
+                        <h2 id="city">Suzano </h2>
+                        <img src="https://flagsapi.com/BR/flat/64.png" alt="" id="country">
+                    </div>
                     <div class="data">
                         <span>Quarta, Abril 24</span>
                     </div>
+
                 </div>
+                
                 <div class="icones">
                     <p id="temperature"><span>38 </span>&deg;C
                         <img src="https://openweathermap.org/img/wn/04n.png" alt="" id="weather-icon">
@@ -46,6 +50,9 @@
 
                 </div>
             </div>
+            <div class="und">
+                <p>País não encontrado na nossa base de dados :( <br> tente pesquisar por outro</p>
+            </div>
             <div class="form">
                 <input type="text" placeholder="Digite sua cidade" id="city-input">
                 <button id="pesquisar">
@@ -56,7 +63,7 @@
             
         </div>
         <div class="principais">
-            <span id="paris"><p>Paris</p><h1>25º</h1></span><span id="dubai"><p>Dubai</p><h1>15º</h1></span><span id="sp"><p>São Paulo</p><h1>23º</h1></span><span id="rj"><p>RJ</p><h1>30º</h1></span>
+            <span id="paris"><p class="paises">Paris</p><h1 class="temppais">25º</h1></span><span id="dubai"><p class="paises">Dubai</p><h1 class="temppais">15º</h1></span><span id="sp"><p class="paises">São Paulo</p><h1 class="temppais">23º</h1></span><span id="rj"><p class="paises">RJ</p><h1 class="temppais">30º</h1></span>
         </div>
     </div>
    
