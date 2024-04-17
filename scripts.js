@@ -82,6 +82,10 @@ principais("dubai", "Dubai")
 principais("sp", "Sp")
 principais("rj", "Rj")
 
+const date = new Date();
+const timeElapsed = Date.now();
+const today = new Date(timeElapsed)
+console.log(today.toDateString())
 
-
-
+const datahj = document.querySelector(".data span")
+datahj.innerText = today.toDateString()
