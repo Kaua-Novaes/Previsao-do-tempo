@@ -1,5 +1,6 @@
 //seleção de eventos
 const key = 'eef750d8acf37a3d4c6515dd8e783d25';
+const apiBakc = 'm8TJs9wTkSRXz8FCLwJR6yoKXcul6JZrnNDyYRpFm1z6zZYtLkgyMKjF'
 const flagapi = "https://flagsapi.com/BR/flat/64.png";
 
 const cidade = document.querySelector("#city-input")
@@ -17,15 +18,16 @@ const telaprevisao  = document.querySelector(".previsao")
 const erro = document.querySelector(".und")
 const paises = document.querySelector(".paises")
 const temp = document.querySelector(".temppais")
+
 const ConsultarDados = async(city) => {
     const UrlApi = `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=${"eef750d8acf37a3d4c6515dd8e783d25"}&lang=pt_br`
     const res = await fetch(UrlApi)
     const data = await res.json()
     return data
-    
 
 
 }
+
 
 //função esperar a cidade
 const previsao = async (city) => {
@@ -46,10 +48,7 @@ const previsao = async (city) => {
     countryElement.setAttribute("src", `https://flagsapi.com/${data.sys.country}/flat/64.png`)
     windElement.innerText = `${data.wind.speed}km/h`
     umidityElement.innerText = `${data.main.humidity}%`
-    console.log(`https://flagsapi.com/${data.sys.country}/flat/64.png`)
-
-    
-    
+    console.log(`https://flagsapi.com/${data.sys.country}/flat/64.png`) 
 
 }
 
@@ -71,12 +70,18 @@ cidade.addEventListener("keyup", (e) => {
 })
 
 const principais = async (pais, temp) => {
-    ConsultarDados(pais)
-    const data = await ConsultarDados(city);
-
-    return temp.innerText = parseInt(data.main.temp)
+    const paisname = document.querySelector(`#${pais} p`)
+    const temppais = document.querySelector(`#temp${temp}`)
+    ConsultarDados(paisname.textContent);
+    const data = await ConsultarDados(paisname.textContent);
+    return temppais.innerText = `${parseInt(data.main.temp)}º`
 
 }
-principais(paises, temp)
+principais("paris", "Paris")
+principais("dubai", "Dubai")
+principais("sp", "Sp")
+principais("rj", "Rj")
+
+
 
 
