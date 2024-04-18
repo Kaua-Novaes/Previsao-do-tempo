@@ -1,6 +1,6 @@
 # Previsão do Tempo
 
-Este é um simples aplicativo web para previsão do tempo que permite aos usuários pesquisar por cidades específicas e visualizar as principais cidades ao redor com suas respectivas temperaturas.
+Este é um simples aplicativo web para previsão do tempo que permite aos usuários pesquisarem por cidades específicas e visualizar as principais cidades ao redor com suas respectivas temperaturas.
 
 ## Funcionalidades
 
@@ -46,4 +46,4 @@ Contribuições são bem-vindas! Sinta-se à vontade para abrir um PR para melho
 
 ## Contato
 
-Para qualquer dúvida ou sugestão, entre em contato com [Inserir seu nome ou email aqui].
+Para qualquer dúvida ou sugestão, entre em contato com kaua88novaes@gmail.com.
